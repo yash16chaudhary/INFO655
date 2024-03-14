@@ -13,7 +13,7 @@ test('renders Song component with string year as "Unknown"', () => {
 
   expect(screen.getByText(testData.title)).toBeTruthy();
   expect(screen.getByText(`Artist: ${testData.artist}`)).toBeTruthy();
-  // You can check the absence of the 'Year' element for string year
+
   expect(screen.queryByText('Year:')).toBeNull();
 });
 test('renders Song component with provided title, artist, and year', () => {
@@ -25,7 +25,7 @@ test('renders Song component with provided title, artist, and year', () => {
   
     render(<Song title={testData.title} artist={testData.artist} year={testData.year} />);
   
-    // Check if the component renders the provided title, artist, and year
+   
     expect(screen.getByText(testData.title)).toBeTruthy();
     expect(screen.getByText(`Artist: ${testData.artist}`)).toBeTruthy();
     expect(screen.getByText(`Year: ${testData.year}`)).toBeTruthy();
@@ -40,7 +40,7 @@ test('renders Song component with provided title, artist, and year', () => {
   
     render(<Song title={testData.title} artist={testData.artist} year={testData.year} />);
   
-    // Check if the component renders the provided title, artist, and year
+    
     expect(screen.getByText(testData.title)).toBeTruthy();
     expect(screen.getByText(`Artist: ${testData.artist}`)).toBeTruthy();
     expect(screen.getByText(`Year: ${testData.year}`)).toBeTruthy();

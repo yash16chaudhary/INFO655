@@ -49,9 +49,9 @@ const App = () => {
       setStatusText(`Playing: ${displayTitle}`);
     }
   
-    setCurrentTrackIndex(previousIndex); // Update current track index
+    setCurrentTrackIndex(previousIndex); 
   
-    // Update play/pause button to display "play" if not currently playing
+
     if (!isPlaying) {
       setStatusText('Play');
     }
@@ -77,9 +77,9 @@ const App = () => {
       setStatusText(`Playing: ${displayTitle}`);
     }
   
-    setCurrentTrackIndex(nextIndex); // Update current track index
+    setCurrentTrackIndex(nextIndex); 
   
-    // Update play/pause button to display "play" if not currently playing
+ 
     if (!isPlaying) {
       setStatusText('Play');
     }
@@ -114,3 +114,4 @@ const App = () => {
 };
 
 export default App;
+//New branch
